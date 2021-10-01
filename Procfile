@@ -1,0 +1,1 @@
+web: gunicorn nomedopeojeto.wsgi --log-file -

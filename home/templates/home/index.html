@@ -1,0 +1,53 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground</title>
+</head>
+
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+    <main>
+        {% include 'carousel.html' %}
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Games</h1>
+                <p class="lead">Selecione um Game Abaixo</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mt-2">
+                {% include 'msg.html' %}
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 20px;">
+                {% for linhas in dados %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{linhas.foto.url}}" class="card-img-top w-100 h-75" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{linhas.title}}</h5>
+                            <p class="card-text">{{linhas.description}}</p>
+                            <p class="card-text">R${{linhas.price}}</p>
+                        </div>
+                        <a href="{% url 'games' linhas.id %}" class="btn btn-primary">Veja mais...</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    <footer>
+        {% include 'rodape.html' %}
+    </footer>
+
+</body>
+
+</html>
