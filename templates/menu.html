@@ -19,7 +19,7 @@
             </ul>
             {% if 'user' not in request.path %}
             <form action="{% url 'buscar' %}" method="get" class="d-flex">
-                <input name="buscar" class="form-control me-2" type="text" placeholder="Bucar video jogo">
+                <input name="buscar" class="form-control me-2" type="text" placeholder="Faça sua busca">
             </form>
             {% endif %} 
             {% if user.is_authenticated %}
