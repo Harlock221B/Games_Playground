@@ -1,1 +1,1 @@
-web: gunicorn nomedopeojeto.wsgi --log-file -
+web: gunicorn games.wsgi --log-file -
