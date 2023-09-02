@@ -15,8 +15,16 @@ class Games(models.Model):
         mostrar = models.BooleanField(default=True)
         produtora = models.ForeignKey(Produtora, on_delete=models.DO_NOTHING)
         price = models.DecimalField(max_digits=6, decimal_places=2)
-        gender = models.CharField(max_length=10,default='A',choices=(('A','Multiplayer'),('B','Single-Player'),('C','MMO')))
+        gender = models.CharField(max_length=10,default='A',choices=(('A','Multiplayer'),('B','Single-Player'),('C','MMO'),('D','Co-Op'), ('E','Battle Royale')))
         foto = models.ImageField(blank=True, upload_to='fotos/%y/%m/%d/')
 
         def __str__(self):
                 return self.title
+
+class Genero(models.Model):
+        nome = models.CharField(max_length=60)
+        descricao = models.CharField(max_length=200)
+        def __str__(self):
+                return self.nome
+
+        

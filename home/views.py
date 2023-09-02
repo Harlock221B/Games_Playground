@@ -23,3 +23,5 @@ def buscar(request):
         Q(title__icontains=x) | Q(description__icontains=x)
     )
     return render(request,'home/index.html',{'dados':dados})
+
+

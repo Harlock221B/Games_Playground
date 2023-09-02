@@ -4,7 +4,6 @@ from django.core.validators import validate_email
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 
-
 def login(request):
     if request.method != 'POST':
        return render(request, 'usuario/login.html')
@@ -74,7 +73,7 @@ def cadastrar(request):
     user.save()
     return redirect('login')
 
+ 
 @login_required(redirect_field_name='login')
 def tela_principal(request):
     return render(request, 'usuario/tela_principal.html')
-

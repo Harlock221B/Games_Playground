@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,12 +14,14 @@
     <main>
         <div class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Bem vindo {{ user.get_full_name }}</h1>
+                <img src="{{ user.profile.profile_picture.url }}" alt="Avatar" class="img-thumbnail rounded-circle">
+                <h1 class="display-4">Bem vindo {{ user.get_full_name }}</h1>                
                 <p class="lead">Veja aqui seus jogos favoritos e suas analises.</p>
-                <hr class="my-4">                
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <hr class="my-4"> 
+                <span>
+                    Biografia
+                </span>
+                <p>{{ user.profile.biography }}</p>
             </div>
         </div>
     </main>

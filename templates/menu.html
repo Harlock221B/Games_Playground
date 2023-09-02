@@ -18,20 +18,20 @@
                 </li>
             </ul>
             {% if 'user' not in request.path %}
-            <form action="{% url 'buscar' %}" method="get" class="d-flex">
-                <input name="buscar" class="form-control me-2" type="text" placeholder="Faça sua busca">
-            </form>
+                <form action="{% url 'buscar' %}" method="get" class="d-flex">
+                    <input name="buscar" class="form-control me-2" type="text" placeholder="Buscar">
+                </form>
             {% endif %} 
             {% if user.is_authenticated %}
-            <a class="btn btn-light" href="{% url 'buscar' %}"></a>
-            <a class="btn btn-light" href="{% url 'tela_principal' %}">Perfil</a>
-            <a class="btn btn-danger" href="{% url 'logout' %}">Sair</a>
+                <a class="btn btn-light" href="{% url 'buscar' %}"></a>
+                <a class="btn btn-light" href="{% url 'tela_principal' %}"> 
+                    Ola, 
+                    {{ user.username }}                 
+                </a>
+                <a class="btn btn-danger" href="{% url 'logout' %}">Sair</a>
             {% else %}
-            <a class="btn btn-success" href="{% url 'login' %}">Login</a>
+                <a class="btn btn-success" href="{% url 'login' %}">Login</a>
             {% endif %}
-    
-
-
         </div>
     </div>
 </nav>
