@@ -1,7 +1,7 @@
-#Projeto Games_Playground
+# Projeto Games_Playground
 O Games_Playground é um emocionante projeto de loja e análise de jogos desenvolvido com Django, criado para entusiastas de jogos que desejam uma plataforma única para descobrir, comprar e compartilhar experiências sobre os seus jogos favoritos. Este projeto proporciona uma experiência envolvente para os amantes de jogos, onde podem encontrar informações detalhadas sobre jogos, ler análises de outros jogadores e comprar os títulos que mais lhes interessam.
 
-#Funcionalidades Principais
+# Funcionalidades Principais
 O Games_Playground oferece uma variedade de funcionalidades emocionantes para a comunidade de jogadores:
 
 Catálogo de Jogos: Uma extensa coleção de jogos de diferentes gêneros, incluindo descrições detalhadas, imagens e informações técnicas.
