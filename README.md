@@ -18,7 +18,7 @@ Pesquisa Avançada: Um mecanismo de pesquisa robusto permite que os usuários en
 
 Integração de Mídias Sociais: Compartilhe suas análises e descobertas de jogos nas redes sociais diretamente do Games_Playground.
 
-#Tecnologias Utilizadas
+# Tecnologias Utilizadas
 O Games_Playground é desenvolvido utilizando uma série de tecnologias modernas:
 
 Django: O framework web Python robusto que facilita o desenvolvimento rápido e seguro da aplicação.
@@ -31,7 +31,7 @@ Autenticação de Usuário: Implementamos autenticação de usuário segura para
 
 APIs de Jogos: Integrações com APIs de terceiros para obter informações atualizadas sobre jogos e suas classificações.
 
-#Como Contribuir
+# Como Contribuir
 Você é bem-vindo para contribuir com o desenvolvimento do Games_Playground! Aqui estão algumas maneiras de participar:
 
 Desenvolvimento: Se você é um desenvolvedor Django, pode ajudar a melhorar o código-fonte, corrigir bugs ou adicionar novos recursos.
@@ -44,7 +44,7 @@ Feedback: Use a plataforma, escreva análises, compartilhe suas ideias e sugest�
 
 Divulgação: Ajude a promover o projeto nas redes sociais e entre a comunidade de jogadores.
 
-Licença
+# Licença
 Este projeto é distribuído sob a Licença MIT. Sinta-se à vontade para usá-lo, modificá-lo e compartilhá-lo conforme as diretrizes da licença.
 
 Junte-se à comunidade do Games_Playground e faça parte desta emocionante jornada para criar o melhor ambiente para os amantes de jogos!
