@@ -12,14 +12,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from django.contrib.messages import constants as minhas_msg
 from pathlib import Path
-import django_on_heroku
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
+# Quick-sart development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -28,8 +26,7 @@ SECRET_KEY = 'django-insecure-x%5+aoql_9tizj0g#w40zw2h%c31*+9opd0)c*e$hogs!r7gv_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.varcel.app']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -137,7 +134,6 @@ MEDIA_URL = 'media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-django_on_heroku.settings(locals())
 
 MESSAGE_TAGS = {
     minhas_msg.INFO: 'alert-info',
